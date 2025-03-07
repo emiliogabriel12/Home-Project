@@ -1,0 +1,202 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.service-hero {
+    position: relative; /* Ensures positioning context for the section */
+    height: 100vh; /* Sets height of the section to cover the viewport */
+    overflow: hidden; /* Prevents overflow */
+}
+
+.hero {
+    background-image: url('image/Transforming Ideas into Reality.png');
+    background-size: cover; /* Cover ensures the background image covers the entire area */
+    background-position: center; /* Centers the background image */
+    height: 100%; /* Full height of the parent container */
+    display: flex; /* Enables flexbox for centering */
+    flex-direction: column; /* Aligns children in a column */
+    justify-content: center; /* Centers children vertically */
+    align-items: center; /* Centers children horizontally */
+    color: white; /* You can change this for contrast */
+    text-align: center; /* Center text */
+}
+
+.hero h2 {
+    font-size: 3rem;
+    background: #ff74c5;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    background: #ff74c5;
+}
+
+.hero h2, p {
+    background-size: 100%;
+}
+
+/* Services Section */
+.services {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.service-card {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.service-content {
+    padding: 20px;
+    flex: 1;
+}
+
+.service-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.service-details {
+    display: none;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #444;
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 80%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact form button {
+    padding: 12px 25px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact form button:hover {
+    background-color: #1e74d1;
+}
+
+/* Footer Section */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}

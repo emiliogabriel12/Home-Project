@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Services - Hansen Partners</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <header class="navbar">
+        <div class="logo">
+            <h1>Hansen Partners</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="service-hero">
+        <section class="hero">
+            <h2>Transforming Ideas into Reality</h2>
+            <p>Your trusted partner in innovative services.</p>
+        </section>
+    </div>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-card" onclick="toggleDetails('service1')">
+            <div class="service-image">
+                <img src="image/consulting.jpg" alt="Consulting">
+            </div>
+            <div class="service-content">
+                <h3>Consulting</h3>
+                <p>Strategic advice for business growth.</p>
+                <p id="service1" class="service-details">We offer tailored strategies that drive success. Our experts analyze and provide solutions for your business challenges.</p>
+            </div>
+        </div>
+        <div class="service-card" onclick="toggleDetails('service2')">
+            <div class="service-image">
+                <img src="image/development.png" alt="Development">
+            </div>
+            <div class="service-content">
+                <h3>Development</h3>
+                <p>Building scalable and reliable solutions.</p>
+                <p id="service2" class="service-details">We create custom software and systems designed to scale with your business and help optimize operations.</p>
+            </div>
+        </div>
+        <div class="service-card" onclick="toggleDetails('service3')">
+            <div class="service-image">
+                <img src="image/Designe.png" alt="Design">
+            </div>
+            <div class="service-content">
+                <h3>Design</h3>
+                <p>Crafting impactful user experiences.</p>
+                <p id="service3" class="service-details">Our design solutions focus on creating intuitive, attractive, and engaging user interfaces for your customers.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We are a dedicated team of professionals offering innovative solutions to help businesses grow and thrive in a competitive market.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? We'd love to hear from you!</p>
+        <form id="contactForm" action="#" method="POST">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2025 Hansen Partners. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
